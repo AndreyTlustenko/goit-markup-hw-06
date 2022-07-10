@@ -107,6 +107,8 @@
        
         outline:transparent;
         fill:#2196F3;
+
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
         
         }
     /* .input-list.textarea { height: 120px;} */
@@ -148,7 +150,9 @@
    }
 
     .checkbox-icon { margin-right: 8px;
-        width: 16px;}
+        width: 16px;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
 
     .label {
         display: flex;
@@ -739,8 +743,17 @@
     .email {
         display: inline-flex;
         
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.25;
+
         min-width: 368px;
         height: 50px;
+
+        color: rgba(255, 255, 255, 0.6);
+
 
         border: 1px solid rgba(255, 255, 255, 0.3);
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
