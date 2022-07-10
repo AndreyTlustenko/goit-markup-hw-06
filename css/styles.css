@@ -199,7 +199,7 @@
         letter-spacing: 0.06em;
      
         color: var(--button-color);
-        background: #188CE8;
+        background: #2196F3;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         border-radius: 4px;
         border-color: transparent;
@@ -210,6 +210,12 @@
         margin-right: auto;
     
     }
+    .modal-submit:focus,
+    .modal-submit:hover {  background: #188CE8;
+
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
 
     .modal {
         position: absolute;
