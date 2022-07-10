@@ -65,49 +65,44 @@
             <h2 class="lable-title">Оставьте свои данные, мы вам перезвоним</h2> 
 
                 <ul >
-                    <li ><label class="modal-list" for="name">Имя</label>
-                        <input class="input-list" type="name" name="name" id="name">
-                            <svg class="modal-icon" width="12" height="12" aria-label="name">
-                            <use href="./images/icons.svg#icon-modal-name"></use>
+                    <li><label class="modal-list" for="name">Имя</label>
+                     <input class="input-list" type="name" name="name" id="name" required>       
+                        <svg class="modal-icon" width="12" height="12" aria-label="name">
+                        <use href="./images/icons.svg#icon-modal-name"></use>
                         </svg>
                     </li>
-                    <li >
+
+                    <li>
                         <label class="modal-list" for="tel">Телефон</label>
-                        <input class="input-list" type="tel" name="tel" id="tel">
+                        <input class="input-list" type="tel" name="tel" id="tel" required> 
                         <svg class="modal-icon" width="13" height="13" aria-label="tel">
                         <use href="./images/icons.svg#icon-modal-phone"></use>
                         </svg>
                     </li>
-                    <li >
+                    <li>
                         <label class="modal-list" for="email">Почта</label>
-                        <input class="input-list" type="email" name="email" id="email">
+                        <input class="input-list" type="email" name="email" id="email" required>
                         <svg class="modal-icon" width="15" height="12" aria-label="email">
                         <use href="./images/icons.svg#icon-mail"></use>
                         </svg>
                     </li>
-                    <li >
+                    <li>
                         <label class="modal-list" for="">Комментарий</label>
                         <textarea class="modal-coment" name="coment" id="coment" placeholder="Введите текст"></textarea>
-                        
                 </ul>
-            <label class="label" for="">
-                <input class="checkbox-icon" type="checkbox" name="" id="">Соглашаюсь с рассылкой и принимаю <a class="policity" href=""> Условия договора</a> 
-                <svg class="modal-icon" width="11" height="0" aria-label="icon-send">
+            <label class="check" for="">
+                <input class="checkbox" type="checkbox" visibility hidden name="icon-send" id="icon-send">Соглашаюсь с рассылкой и принимаю 
+                <a class="policity" href=""> Условия договора</a> 
+                 <svg class="checkbox-icon"  width="11" height="8" aria-label="icon-send">
                     <use href="./images/icons.svg#icon-modal-icon-send"></use>
                  </svg>
-                    <svg class="modal-icon" width="11" height="0" aria-label="icon-send">
-                        <use href="./images/icons.svg#icon-ic-cend-bord"></use>
-                    </svg>
             </label>
+            
                 <button class="modal-submit" type="modal-submit">Отправить</button>
 
-               
-             
-          
-                
-                
-
-                
+            <!-- <svg class="checkbox-icon" width="11" height="8" aria-label="icon-send">
+                        <use href="./images/icons.svg#icon-ic-cend-bord"></use>
+                    </svg> -->
             </label>
             </form>
         </div>

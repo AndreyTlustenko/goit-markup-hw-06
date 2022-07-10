@@ -100,8 +100,22 @@
         border: 1px solid rgba(33, 33, 33, 0.2);
         border-radius: 4px;
         cursor: pointer;
-        
     }
+    
+    .modal-coment::placeholder{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.01em;
+        
+        color: rgba(117, 117, 117, 0.5);
+
+
+    }
+
+
     .input-list:focus,
     .modal-coment:focus  { 
         outline:var(--accent-color);
@@ -150,18 +164,40 @@
       }
 
     .modal-icon{ position: absolute;
-        left: 10%;
-        transform: translateY(13px);
+        left: 40px;
+     transform: translate( 100%, 100%);
 
    }
+    
+        
+        
+        
+    .checkbox-icon { position: absolute;
 
-    .checkbox-icon { margin-right: 8px;
+        margin-right: 8px;
         width: 16px;
+        height: 15px;
+        
+        color: #FFFFFF;
+        left: 40px;
+        border: 1px solid #000000;
+        fill: none;
+        transform: translate(5px, 4px);
+        
+        cursor: pointer;
+    }
+   
+    .checkbox:checked + .check__box {
+        fill: #FFFFFF;
+        background-image: url(/images/icons/modal-icon-send.svg);
+
         transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        cursor: pointer;
     }
 
-    .label {
-        display: flex;
+    .check {
+        display:flex;
+        
         justify-content: center;
         font-family: 'Roboto';
         font-style: normal;
@@ -173,7 +209,7 @@
         color: #757575;
         
         margin-top: 20px;
-       
+       padding-left: 10px;
     }
     /* .placeholder {font-family: 'Roboto';
     font-style: normal;
@@ -258,7 +294,10 @@
         border-radius: 50%;
         cursor: pointer;
     }
-    
+
+    .modal-close-button:hover { fill: #2196F3;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
     .section-comand {background: var(--background-button);
         padding-bottom: 94px; padding-top: 94px; 
       }
@@ -773,7 +812,7 @@
 
         padding: 16px 15px;
 }
-    
+    .email:focus { outline: transparent;}
 
     .button-submit{display: inline-flex;
         font-family: 'Roboto';
