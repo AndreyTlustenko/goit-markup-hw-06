@@ -172,33 +172,61 @@
         
         
         
-    .checkbox-icon { position: absolute;
+    .custom { display: inline-block;
+        margin-right: 7px;
 
-        margin-right: 8px;
         width: 16px;
         height: 15px;
         
-        color: #FFFFFF;
-        left: 40px;
+       
         border: 1px solid #000000;
+        border-radius: 2px;
         fill: none;
         transform: translate(5px, 4px);
         
         cursor: pointer;
     }
-   
-    .checkbox:checked + .check__box {
-        fill: #FFFFFF;
-        background-image: url(/images/icons/modal-icon-send.svg);
+
+    .checkbox-tumb { display: flex;
+        padding-top: 20px;
+        padding-bottom: 30px;
+}
+    /* .checkbox-icon {
+
+        
+    }   */
+    
+    .checkbox {   position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+
+     }
+
+    .checkbox:checked + .custom {
+        
+        background-color: var(--accent-color);
+        background-image: url(/images/icons/full-check.svg);
+        background-origin:border-box;
+        border-color: var(--accent-color);
+        border-radius: 2px;
 
         transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
         cursor: pointer;
     }
-
-    .check {
-        display:flex;
+    
+   
+   
+    
+    .check-text { display:flex;
         
-        justify-content: center;
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 400;
@@ -207,19 +235,11 @@
         letter-spacing: 0.03em;
         
         color: #757575;
+        padding-left: 7px;
         
-        margin-top: 20px;
-       padding-left: 10px;
     }
-    /* .placeholder {font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.01em;
-    
-    color: rgba(117, 117, 117, 0.5); } */
 
+  
     .policity { color: var(--accent-color);
         text-decoration: underline;
     padding-left: 5px;}
@@ -247,9 +267,10 @@
         border-color: transparent;
         cursor: pointer;
 
-        margin-top: 30px;
+       
         margin-left: auto;
         margin-right: auto;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
     }
     .modal-submit:focus,
@@ -293,10 +314,11 @@
         border: 1px solid rgba(0, 0, 0, 0.1);
         border-radius: 50%;
         cursor: pointer;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     .modal-close-button:hover { fill: #2196F3;
-        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        
     }
     .section-comand {background: var(--background-button);
         padding-bottom: 94px; padding-top: 94px; 
@@ -834,6 +856,7 @@
         border-radius: 4px;
         border-color: transparent;
         cursor: pointer;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     }
     .button-submit:hover,
