@@ -66,7 +66,7 @@
 
                 <ul >
                     <li><label class="modal-list" for="name">Имя</label>
-                     <input class="input-list" type="name" name="name" id="name" required>       
+                     <input class="input-list"  name="name" id="name" required>       
                         <svg class="modal-icon" width="12" height="12" aria-label="name">
                         <use href="./images/icons.svg#icon-modal-name"></use>
                         </svg>
@@ -87,23 +87,23 @@
                         </svg>
                     </li>
                     <li>
-                        <label class="modal-list" for="">Комментарий</label>
+                        <label class="modal-list" for="coment">Комментарий</label>
                         <textarea class="modal-coment" name="coment" id="coment" placeholder="Введите текст"></textarea>
                 </ul>
                 
-            <label class="checkbox-tumb">
+            <div class="checkbox-tumb">
                 <input class="checkbox" type="checkbox" name="checkbox" id="checkbox" >
 
                  <span class="custom"><svg class="checkbox-icon" width="11" height="8" aria-label="icon-send">
                     <use href="./images/icons.svg#icon-modal-icon-send"></use>
                  </svg></span>
 
-                 <label class="check-text" type="checkbox" name="checkbox" for="checkbox" >Соглашаюсь с рассылкой и принимаю 
+                 <label class="check-text" for="checkbox" >Соглашаюсь с рассылкой и принимаю 
                 <a class="policity" href=""> Условия договора</a> 
                  </label>
-            </label>
+                </div>
 
-                <button class="modal-submit" type="modal-submit">Отправить</button>
+                <button class="modal-submit" type="submit">Отправить</button>
             </form>
         </div>
         
@@ -425,7 +425,7 @@
     </div>
 
     <form class="footer-label">
-      <label class="label-title" for="">Подпишитесь на рассылку </label>
+      <label class="label-title">Подпишитесь на рассылку </label>
       <input class="email" type="email" name="email" placeholder="Е-mail">
 
    <button class="button-submit" type="submit">Подписаться <svg class="f-submit" width="24" height="24">
