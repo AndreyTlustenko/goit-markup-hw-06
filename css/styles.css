@@ -213,7 +213,7 @@
     .checkbox:checked + .custom {
         
         background-color: var(--accent-color);
-        background-image: url(/images/icons/full-check.svg);
+        background-image: url(../images/icons/full-check.svg);
         background-origin:border-box;
         border-color: var(--accent-color);
         border-radius: 2px;
